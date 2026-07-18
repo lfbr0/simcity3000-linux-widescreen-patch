@@ -3,3 +3,4 @@ sc3u.dynamic
 sc3u.dynamic.hd
 *.log
 __pycache__/
+/sc3u-research
