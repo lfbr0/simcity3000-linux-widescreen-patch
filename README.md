@@ -4,7 +4,7 @@ A reversible binary patch for the native Linux `sc3u.dynamic` executable shipped
 
 You need the Loki version of this game.
 
-The original Linux binary accepts only a small hardcoded set of startup resolutions and rewrites unsupported values to fallback modes. This patch bypasses those two validation routines, allowing widescreen and HD resolutions such as `1600x900` and `1920x1080`.
+The original Linux binary accepts only a small hardcoded set of startup resolutions and rewrites unsupported values to fallback modes. This patch bypasses those two validation routines, allowing widescreen and HD resolutions. **Please take care that not all resolutions will work. It's trial and error on your part.**
 
 # IMPORTANT NOTE - DO NOT DO ANYTHING BEFORE READING THIS!
 
@@ -71,7 +71,7 @@ sudo sed -i \
 Test a 16:9 window:
 
 ```bash
-/usr/local/games/simcity3000/sc3u.dynamic.hd.sh -w -r1600x900
+/usr/local/games/simcity3000/sc3u.dynamic.hd.sh -w -r1360x768
 ```
 
 Full HD:
@@ -92,7 +92,7 @@ Name=Sim City 3000 Unlimited HD Widescreen
 GenericName=Sim City 3000 Unlimited HD Widescreen
 Comment=Play Sim City 3000 Unlimited in HD widescreen
 Icon=/usr/local/games/simcity3000/icon.xpm
-Exec=/usr/local/games/simcity3000/sc3u.dynamic.hd.sh -w -r1600x900
+Exec=/usr/local/games/simcity3000/sc3u.dynamic.hd.sh -w -r1360x768
 Categories=Game;
 ```
 
@@ -115,7 +115,7 @@ sudo rm /usr/local/games/simcity3000/sc3u.dynamic.hd.sh
 
 Some resolutions may be unstable because the game was not originally tested with modern display modes. Save frequently and test your chosen resolution before relying on it.
 
-`1600x900` windowed has been tested successfully on a 1920x1080 XFCE desktop.
+`1360x768` windowed has been tested successfully on a 1920x1080 XFCE desktop.
 
 ## Legal
 
